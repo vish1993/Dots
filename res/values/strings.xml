@@ -6,5 +6,4 @@
     <string name="hello_world">Hello world!</string>
     <string name="dots_title">TapDots</string>
 	<string name="play">Play</string>
-    <color name="black">#000000</color>
 </resources>
