@@ -8,7 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -37,8 +36,8 @@
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/ImageButton03"
-        android:layout_alignParentRight="true" >
+       	android:height = "110dp"
+       	android:width = "110dp" >
     </RelativeLayout>
 
     <ImageButton
@@ -79,5 +78,12 @@
         android:layout_alignTop="@+id/ImageButton01"
         android:src="@drawable/red_circle"
         android:text="@string/play" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/textView1" >
+    </RelativeLayout>
 
 </RelativeLayout>
