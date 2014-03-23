@@ -5,5 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="dots_title">TapDots</string>
-	<string name="play">Play</string>
+    <string name="play">Play</string>
+    <string name="title_activity_play">Play</string>
+
 </resources>
