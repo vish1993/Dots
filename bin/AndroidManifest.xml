@@ -10,12 +10,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/game_circle"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.dots.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:noHistory="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +25,37 @@
         </activity>
         <activity
             android:name="com.example.dots.Play"
-            android:label="@string/title_activity_play" >
+            android:label="@string/title_activity_play"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.dots.Options"
+            android:label="@string/title_activity_options"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.dots.Swipe"
+            android:label="@string/title_activity_swipe" >
+        </activity>
+        <activity
+            android:name="com.example.dots.High_scores"
+            android:label="@string/title_activity_high_scores" >
+        </activity>
+        <activity
+            android:name="com.example.dots.Scores_DB"
+            android:label="@string/title_activity_scores__db" >
+        </activity>
+        <activity
+            android:name="com.example.dots.Score_DB"
+            android:label="@string/title_activity_score__db" >
+        </activity>
+        <activity
+            android:name="com.example.dots.HighScores"
+            android:label="@string/title_activity_high_scores" >
+        </activity>
+        <activity
+            android:name="com.example.dots.Play2"
+            android:label="@string/title_activity_play2" >
         </activity>
     </application>
 

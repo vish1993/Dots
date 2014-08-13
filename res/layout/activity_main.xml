@@ -1,90 +1,46 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rect"
+    android:id="@+id/intro_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-    <TextView
-        android:id="@+id/textView1"
+     
+    <ImageView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/relativeLayout1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:fontFamily="serif"
-        android:text="@string/dots_title"
-        android:textColor="#00FFFF"
-        android:textSize="52sp"
-        android:textStyle="italic" />
-
-    <ImageButton
-        android:id="@+id/ImageButton02"
+		android:background="@drawable/title_text"
+	/>
+    
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width = "110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/play_btn" 
+        android:onClick = "goPlay"/>
+    
+    <Button
+        android:id="@+id/options_btn"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="16dp"
-        android:onClick = "goPlay"
-        android:src="@drawable/red_circle"
-        android:text="@string/play" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       	android:height = "110dp"
-       	android:width = "110dp" >
-    </RelativeLayout>
-
-    <ImageButton
-        android:id="@+id/ImageButton03"
+        android:layout_below="@+id/play_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/options_btn"
+        android:onClick ="goOptions" />
+    
+     <Button
+        android:id="@+id/scores_btn"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_alignRight="@+id/relativeLayout1"
-        android:layout_alignTop="@+id/ImageButton02"
-        android:layout_marginRight="17dp"
-        android:src="@drawable/red_circle"
-        android:text="@string/play" />
-
-    <TextView
-        android:id="@+id/play_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ImageButton02"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_marginBottom="41dp"
-        android:layout_marginLeft="22dp"
-        android:text="@string/play" />
-
-    <ImageButton
-        android:id="@+id/ImageButton01"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_alignLeft="@+id/ImageButton02"
-        android:layout_below="@+id/ImageButton02"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/red_circle"
-        android:text="@string/play" />
-
-    <ImageButton
-        android:id="@+id/ImageButton04"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_alignLeft="@+id/ImageButton03"
-        android:layout_alignTop="@+id/ImageButton01"
-        android:src="@drawable/red_circle"
-        android:text="@string/play" />
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignTop="@+id/textView1" >
-    </RelativeLayout>
-
+        android:layout_below="@+id/options_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/high_scores_btn"
+        android:onClick = "seeScores"/>
 </RelativeLayout>
