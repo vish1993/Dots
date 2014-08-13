@@ -1,0 +1,46 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+     
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+		android:background="@drawable/title_text"
+	/>
+    
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width = "210dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/play_btn" 
+        android:onClick = "goPlay"/>
+    
+    <Button
+        android:id="@+id/options_btn"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/play_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/options_btn"
+        android:onClick ="goOptions" />
+    
+     <Button
+        android:id="@+id/scores_btn"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/options_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/high_scores_btn"
+        android:onClick = "seeScores"/>
+</RelativeLayout>
